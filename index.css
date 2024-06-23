@@ -1,0 +1,207 @@
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --green : #27ae60;
+    --dark-color : #219150;
+    --black : #444;
+    --light-color : #666;
+    --border : 0.3rem solid rgba(0,0,0,0.1);
+    --border-hover : 0.1rem solid var(--black);
+    --box-shadow : 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.container{
+}
+
+.header-1{
+    /* background: white; */
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+}
+
+.header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header-1 .logo i{
+    color: var(--green);
+}
+
+.container .keep-container{
+    padding: 1.5rem 9%;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.keep-container .todo-creator{
+    display: flex;
+    background: whitesmoke;
+    border-radius: 1rem;
+    height: 6rem;
+}
+
+.keep-container .todo-creator .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 20rem;
+}
+
+.keep-container .todo-creator .input span{
+    font-size: 1.8rem;
+}
+
+.keep-container .todo-creator input{
+    width: 90%;
+    /* border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+    font-size: 1.8rem;
+    padding-left: 2rem;
+}
+
+.keep-container .todo-creator .btn-add{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-container .todo-creator  button{
+    font-size: 1.8rem;
+    background: var(--green);
+    color: white;
+    letter-spacing: 0.1rem;
+    width: 15rem;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.keep-container .todo-creator  button:hover{
+    background: #23a359;
+}
+
+.keep-container .notes-list{
+    width: 100%;
+    background: whitesmoke;
+    min-height: 45rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* .keep-container .notes-list::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.keep-container .notes-list ::-webkit-scrollbar-thumb{
+    background: transparent;
+} */
+
+.keep-container .notes-list .notes{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+/* .keep-container .notes-list .notes .info{
+    width: 80rem;
+} */
+
+.keep-container .notes-list .notes h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.keep-container .notes-list .notes p{
+    font-size: 1.4rem;
+    color: #8892b0;
+}
+
+.keep-container .notes-list .notes .delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-container .notes-list .notes .delete button{
+    background: rgb(212, 64, 64);
+    height: 90%;
+    width: 10rem;
+    color: white;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.keep-container .notes-list .notes .delete button:hover{
+    background: rgb(211, 44, 44);
+}
+
+.credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.credit span{
+    color: var(--green);
+}
+
+@media(max-width : 780px){
+    html{
+        font-size: 52%;
+    }
+
+    .keep-container .notes-list{
+        padding: 0;
+    }
+}
+
+/* @media(max-width : 500px){
+    html{
+        font-size: 48%;
+    }
+} */
